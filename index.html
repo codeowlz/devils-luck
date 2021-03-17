@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Javascript Game</title>
+    <link rel="stylesheet" href="out/style.css" />
+    <meta charset="UTF-8" />
+    <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->
+    <link
+      rel="icon"
+      href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="scoreBoard">
+        <p class="titletext">Devil's luck</p>
+        <div class="scoreBoardBackground">
+          <div class="modes">
+            <button class="modebtn" id="easymode">EASY</button>
+            <button class="modebtn" id="hardmode">HARD</button>
+          </div>
+          <p class="whitetext">
+            SCORE<br /><span id="score" class="redtext">0</span>
+          </p>
+          <p class="whitetext">
+            MOVES<br /><span id="movesclick" class="redtext">0</span>
+          </p>
+          <p class="whitetext">
+            TIME<br /><span id="timer" class="redtext">0</span>
+          </p>
+        </div>
+      </div>
+      <div class="gameField">
+        <div>
+          <img id="gameover" src="img/gameover.jpg" alt="gameover" />
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

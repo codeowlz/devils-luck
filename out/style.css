@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/background.jpg");
+  background-size: 100% 100%;
+  font-family: "New Rocker", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "score game";
+}
+
+.scoreBoard {
+  grid-area: score;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.modes {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.modes .modebtn {
+  cursor: pointer;
+  background-color: #b90003;
+  color: #000000;
+  border: 5px groove black;
+  height: 30px;
+  width: 100px;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 5%;
+}
+
+.modes .modebtn:hover {
+  background: linear-gradient(217deg, rgba(150, 65, 65, 0.8), #bbaaaa 70.71%);
+  background-color: #b90003;
+}
+
+.scoreBoardBackground {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 100px;
+}
+
+.gameField {
+  max-width: 1000px;
+  grid-area: game;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.whitetext {
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 2px 4px black;
+}
+
+.redtext {
+  text-align: center;
+  font-size: 40px;
+  color: #b90003;
+  text-shadow: 2px 4px black;
+}
+
+.titletext {
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 60px;
+  color: #b90003;
+  text-shadow: 2px 4px black;
+}
+
+.img {
+  gap: 5px;
+  box-sizing: border-box;
+  transform: scaleX(-1);
+}
+
+.img-active {
+  perspective: 600px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+#gameover {
+  position: absolute;
+  margin-left: 26px;
+  margin-bottom: 30px;
+  display: none;
+  z-index: 10;
+  max-width: 1000px;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */
